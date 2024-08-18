@@ -8,14 +8,15 @@ namespace MVCPelicula.Models.Seeds
         public void Configure(EntityTypeBuilder<Pelicula> builder)
         {
             builder.HasData(
-                new Pelicula { 
-                    ID = 1, 
+                new Pelicula
+                {
+                    ID = 1,
                     Titulo = "Matrix recargado",
-                    FechaLanzamiento = DateTime.Parse("2003-11-13"),
+                    FechaLanzamiento= DateTime.Parse("2003-11-13"),
                     GeneroId = 4,
                     Precio = 10.99M,
                     Director = "Hermanas Wachowski"
-                }, 
+                },
                 new Pelicula
                 {
                     ID = 2,
@@ -25,15 +26,15 @@ namespace MVCPelicula.Models.Seeds
                     Precio = 11.99M,
                     Director = "Peter Jackson"
                 },
-                 new Pelicula
-                 {
-                     ID = 3,
-                     Titulo = "Harry Potter y la camara secreta",
-                     FechaLanzamiento = DateTime.Parse("2002-11-15"),
-                     GeneroId = 5,
-                     Precio = 9.99M,
-                     Director = "Chris columbus"
-                 }
+                new Pelicula
+                {
+                    ID = 3,
+                    Titulo = "Harry Potter y la camara secreta",
+                    FechaLanzamiento = DateTime.Parse("2002-11-15"),
+                    GeneroId = 5,
+                    Precio = 9.99M,
+                    Director = "Chris Columbus"
+                }
                 );
         }
     }

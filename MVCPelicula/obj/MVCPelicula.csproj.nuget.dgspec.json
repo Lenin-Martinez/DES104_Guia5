@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Universidad\\DES_Lab\\Guia3\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj": {}
+    "C:\\Users\\erika\\Downloads\\MVCPelicula\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj": {}
   },
   "projects": {
-    "E:\\Universidad\\DES_Lab\\Guia3\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj": {
+    "C:\\Users\\erika\\Downloads\\MVCPelicula\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Universidad\\DES_Lab\\Guia3\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj",
+        "projectUniqueName": "C:\\Users\\erika\\Downloads\\MVCPelicula\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj",
         "projectName": "MVCPelicula",
-        "projectPath": "E:\\Universidad\\DES_Lab\\Guia3\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj",
-        "packagesPath": "C:\\Users\\LMartinez\\.nuget\\packages\\",
-        "outputPath": "E:\\Universidad\\DES_Lab\\Guia3\\MVCPelicula\\MVCPelicula\\obj\\",
+        "projectPath": "C:\\Users\\erika\\Downloads\\MVCPelicula\\MVCPelicula\\MVCPelicula\\MVCPelicula.csproj",
+        "packagesPath": "C:\\Users\\erika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\erika\\Downloads\\MVCPelicula\\MVCPelicula\\MVCPelicula\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LMartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\erika\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +62,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -83,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

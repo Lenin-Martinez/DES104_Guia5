@@ -1,22 +1,33 @@
-﻿@model IEnumerable<MVCPelicula.Models.Pelicula>
+﻿@using System.Security.Claims;
+
+@model IEnumerable<MVCPelicula.Models.Pelicula>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+
+
+@if (User.Identity!.IsAuthenticated)
+{
+    <p class="display-6">Bienvenido/a @User.Claims.Where(c => c.Type == ClaimTypes.Email).Select(c => c.Value).SingleOrDefault()</p>
+    
+    
+}
+
+
+<h1>Lista de peliculas</h1>
 
 <p>
-    <a asp-action="Create">Agregar pelicula</a>
+    <a asp-action="Create">Registrar una nueva pelicula</a>
 </p>
-<p>
-    <form asp-controller="Peliculas" asp-action="Index" method="get">
-        <p>
-            Título: <input type="text" name="textoABuscar" class="form-control">
-            <input type="submit" value="Filtrar" class="btn-info" />
-        </p>
-    </form>
-</p>
+<form asp-controller="Peliculas" asp-action="Index" method="get">
+    <p>
+        Título: <input type="text" name="textoABuscar" class="form-control" >
+        <input type="submit" value="Filtrar" class="btn btn-info" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

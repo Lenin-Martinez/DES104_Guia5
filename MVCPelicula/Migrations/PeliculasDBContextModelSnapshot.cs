@@ -127,7 +127,7 @@ namespace MVCPelicula.Migrations
                         new
                         {
                             ID = 3,
-                            Director = "Chris columbus",
+                            Director = "Chris Columbus",
                             FechaLanzamiento = new DateTime(2002, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GeneroId = 5,
                             Precio = 9.99m,

@@ -5,20 +5,19 @@ namespace MVCPelicula.Controllers
 {
     public class HelloWorldController : Controller
     {
-        // GET: /HelloWorld
+        //GET :/HelloWorld/
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: /HelloWorld/Welcome
+        //GET :/HelloWorld/Welcome/
         public ActionResult Welcome(string nombre, string apellido, int numVeces = 1)
         {
-            ViewData["nombreCompleto"] = "Hola " + nombre + " " + apellido + ", veces mostrado = ";
+            ViewData["nombre"] = "Hola " + nombre + " " + apellido;
             ViewData["numVeces"] = numVeces;
 
-			return View();
+            return View();
         }
-
     }
 }

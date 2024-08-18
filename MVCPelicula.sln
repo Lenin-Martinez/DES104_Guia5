@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.9.34728.123
+VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPelicula", "MVCPelicula\MVCPelicula.csproj", "{2E4AFC98-DDD1-4CBB-A560-4BAE90918621}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPelicula", "MVCPelicula\MVCPelicula.csproj", "{85EB5217-3A65-48F6-8636-663EEC4B0A01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E4AFC98-DDD1-4CBB-A560-4BAE90918621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E4AFC98-DDD1-4CBB-A560-4BAE90918621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E4AFC98-DDD1-4CBB-A560-4BAE90918621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E4AFC98-DDD1-4CBB-A560-4BAE90918621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EB5217-3A65-48F6-8636-663EEC4B0A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EB5217-3A65-48F6-8636-663EEC4B0A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EB5217-3A65-48F6-8636-663EEC4B0A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EB5217-3A65-48F6-8636-663EEC4B0A01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {33646E4C-308B-4654-BA8B-C7BBC8766EEB}
+		SolutionGuid = {84CA1110-517F-4ED5-A970-8167D9D0487D}
 	EndGlobalSection
 EndGlobal

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MVCPelicula.Models.Seeds
 {
-    public class GeneroSeed : IEntityTypeConfiguration<Genero>
+    public class GeneroSeed: IEntityTypeConfiguration<Genero>
     {
         public void Configure(EntityTypeBuilder<Genero> builder)
         {
@@ -15,6 +15,7 @@ namespace MVCPelicula.Models.Seeds
                 new Genero { Id = 5, Nombre = "Ficcion" },
                 new Genero { Id = 6, Nombre = "Drama" }
                 );
+                
         }
     }
 }

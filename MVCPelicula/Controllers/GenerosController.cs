@@ -9,6 +9,7 @@ using MVCPelicula.Models;
 
 namespace MVCPelicula.Controllers
 {
+    
     public class GenerosController : Controller
     {
         private readonly PeliculasDBContext _context;

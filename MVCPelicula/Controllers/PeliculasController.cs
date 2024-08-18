@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using MVCPelicula.Models;
 
 namespace MVCPelicula.Controllers
 {
+    [Authorize]
     public class PeliculasController : Controller
     {
         private readonly PeliculasDBContext _context;
@@ -23,25 +25,23 @@ namespace MVCPelicula.Controllers
         {
             if(_context.Peliculas == null)
             {
-                return Problem("No se ha inicializado el contexto");
+                return Problem("No se ha inicizalizado el contexto");
             }
 
             var peliculas = from p in _context.Peliculas
                             select p;
-                            
-            if(!string.IsNullOrEmpty(textoABuscar))
+
+            if(!String.IsNullOrEmpty(textoABuscar) )
             {
                 peliculas = peliculas.Where(p => p.Titulo.Contains(textoABuscar));
             }
-
             return View(await peliculas.ToListAsync());
         }
 
-        // POST: 
         [HttpPost]
         public string Index(string textoABuscar, bool notUsed)
         {
-            return "From [HttpPost]Index: Filter on " + textoABuscar;
+            return "From [HttpGet]Index: filter on" + textoABuscar;
         }
 
         // GET: Peliculas/Details/5
@@ -66,6 +66,7 @@ namespace MVCPelicula.Controllers
         // GET: Peliculas/Create
         public IActionResult Create()
         {
+            //ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Id");
             ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Nombre");
             return View();
         }
@@ -113,6 +114,7 @@ namespace MVCPelicula.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Titulo,FechaLanzamiento,GeneroId,Precio,Director")] Pelicula pelicula)
         {
+            //Removemos la validacion de la propiedad de navegacion de Genero
             ModelState.Remove("Genero");
 
             if (id != pelicula.ID)
